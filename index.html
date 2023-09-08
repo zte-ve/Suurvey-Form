@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <main>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+      <form id="survey-form" action="#" method="post">
+        <label for="name" id="name-label">Name <input type="text" id="name" name="name" placeholder="Enter your name" required/></label>
+        <label for="email" id="email-label">Email <input type="email" id="email" name="email" placeholder="Enter your email" required/></label>
+        <label for="number" id="number-label">Age
+(optional) <input type="number" id="number" name="number" placeholder="age" min="13" max="120"/></label>
+        <label for="">
+          Which option best describes your current role?
+          <select id="dropdown">
+            <option>Select current role</option>
+            <option>Student</option>
+            <option>Full Time job</option>
+            <option>Full Time learner</option>
+            <option>Prefer not to say</option>
+            <option>Other</option>
+          </select>
+          </label>
+          <p class="item_para">Would you recommend freeCodeCamp to a friend?</p>
+          <label for="rad1">
+            <input type="radio" id="rad1" name="radio" value="1"  class="inline"checked/> Definitely</label>
+            <label for="rad2"><input type="radio" id="rad2" name="radio" value="2" class="inline"/> Maybe</label>
+            <label for="rad3"><input type="radio" id="rad3" name="radio" value="3" class="inline"/> Not sure</label>
+
+            <label for="dropdown1">
+          What is your favorite feature of freeCodeCamp?
+          <select id="dropdown1">
+            <option>Select an option</option>
+            <option>Challenges</option>
+            <option>Projects</option>
+            <option>Community</option>
+            <option>Open Source</option>
+          </select>
+          </label>
+          <p class="item_para">What would you like to see improved? (Check all that apply)</p>
+            <label for="fep"><input type="checkbox" id="fep" name="fep" value="fep" class="inline"/> Front-end Projects</label>
+            <label for="bep"><input type="checkbox" id="bep" name="radio" value="bep" class="inline"/> Back-end Projects</label>
+            <label for="dv"><input type="checkbox" id="dv" name="radio" value="dv" class="inline"/> Data Visualization</label>
+            <label for="chl"><input type="checkbox" id="chl" name="radio" value="chl" class="inline"/> Challenges</label>
+            <label for="osc"><input type="checkbox" id="osc" name="radio" value="osc" class="inline"/> Open Source Community</label>
+            <label for="ghr"><input type="checkbox" id="ghr" name="radio" value="ghr" class="inline"/> Gitter help rooms</label>
+            <label for="vid"><input type="checkbox" id="vid" name="radio" value="vid" class="inline"/> Videos</label>
+            <label for="cm"><input type="checkbox" id="cm" name="radio" value="cm" class="inline"/> City Meetups</label>
+            <label for="wiki"><input type="checkbox" id="wiki" name="radio" value="wiki" class="inline"/> Wiki</label>
+            <label for="forum"><input type="checkbox" id="forum" name="radio" value="forum" class="inline"/> Forum</label>
+            <label for="ac"><input type="checkbox" id="ac" name="radio" value="ac" class="inline"/> Additional Courses</label>
+            <label for="ta">Any comments or suggestions?
+            <textarea id="ta" rows='5' cols='150'>
+            </textarea>
+            </label>
+            <input id="submit" type="submit" value="Submit"/>
+      </form>
+    </main>
+  </body>
+</html>
